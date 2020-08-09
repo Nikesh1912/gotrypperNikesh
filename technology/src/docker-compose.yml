@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mymongodb:
+    image: mongo:latest
+    container_name: mymongodb
+    ports:
+     - 27017:27017
+
+  technology_v_1:
+    image: technology_v_1
+    container_name: technology_v1_1
+    ports:
+    - 8080:8889
+    links:
+     - mymongodb
+
+
