@@ -19,6 +19,4 @@ public interface GotryppperDBPopulator {
 	List<MasterCity> populateMasterCity(XSSFSheet sheet, String sheetName);
 
 	List<Coupon> populateValidateCoupon(XSSFSheet sheet, String sheetName);
-
-
 }
